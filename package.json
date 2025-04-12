@@ -1,6 +1,6 @@
 {
     "name": "accessor",
-    "version": "0.0.1",
+    "version": "1.0.0",
     "type": "module",
     "main": "dist/index.mjs",
     "module": "src/index.mjs",
@@ -23,17 +23,17 @@
             "require": "./dist/index.cjs"
         }
     },
-    "homepage": "null",
-    "description": "null",
+    "homepage": "https://github.com/environment-safe/accessor",
+    "description": "textual access to deep members of an object in buildless ESM",
     "keywords": [],
-    "author": "null <null>()",
+    "author": "Abbey Hawk Sparrow <@khrome> (http://patternweaver.com)",
     "contributors": [],
     "repository": {
         "type": "git",
-        "url": "null"
+        "url": "git@github.com:environment-safe/accessor.git"
     },
     "bugs": {
-        "url": "null"
+        "url": "https://github.com/environment-safe/accessor/issues"
     },
     "moka": {
         "firefox": {
