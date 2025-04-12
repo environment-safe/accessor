@@ -43,20 +43,20 @@ const copy = function(ob){
 
 describe('object-access', function(){
     describe('augments an object', function(){
-        it('augmented: with attached functions', function(){
+        it('augmented - with attached functions', function(){
             const object = createAugmentedObject();
             should.exist(object.get);
             should.exist(object.set);
         });
 
-        it('augmented: gets a value', function(){
+        it('augmented - gets a value', function(){
             const object = createAugmentedObject();
             const value = object.get('something');
             should.exist(value);
             value.should.equal('somevalue');
         });
 
-        it('augmented: sets a value', function(){
+        it('augmented - sets a value', function(){
             const object = createAugmentedObject();
             object.set('something', 'someothervalue');
             const value = object.get('something');
@@ -64,14 +64,14 @@ describe('object-access', function(){
             value.should.equal('someothervalue');
         });
 
-        it('augmented: gets a subvalue', function(){
+        it('augmented - gets a subvalue', function(){
             const object = createAugmentedObject();
             const value = object.get('parentthing.subthing');
             should.exist(value);
             value.should.equal('subvalue');
         });
 
-        it('augmented: sets a subvalue', function(){
+        it('augmented - sets a subvalue', function(){
             const object = createAugmentedObject();
             object.set('parentthing.subthing', 'someothervalue');
             const value = object.get('parentthing.subthing');
@@ -79,14 +79,14 @@ describe('object-access', function(){
             value.should.equal('someothervalue');
         });
 
-        it('augmented: gets a deep value', function(){
+        it('augmented - gets a deep value', function(){
             const object = createAugmentedObject();
             const value = object.get('parentthing.subparent.subthing');
             should.exist(value);
             value.should.equal('subsubvalue');
         });
 
-        it('augmented: sets a deep value', function(){
+        it('augmented - sets a deep value', function(){
             const object = createAugmentedObject();
             object.set('parentthing.subparent.subthing', 'someothervalue');
             const value = object.get('parentthing.subparent.subthing');
